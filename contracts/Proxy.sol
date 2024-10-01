@@ -2,6 +2,12 @@
 pragma solidity ^0.8.0;
 
 contract Proxy {
+
+    // Payable receive function to accept Ether
+    receive() external payable {
+        // Logic for when Ether is received
+    }
+    
     // Storage slot to store the address of the logic contract
     address public logicContract;
 
